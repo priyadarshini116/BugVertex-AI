@@ -89,7 +89,8 @@ def verify_patch(buggy_code, test_code, llm=ask_llm, max_attempts=MAX_ATTEMPTS, 
             return {"verdict": "verified", "attempts": attempts,
                     "patch": patched, "diff": make_diff(buggy_code, patched)}
         output = result["output"]
-        extra = "\nYour previous attempt still failed the tests. Try a different fix."
+        extra = (f"\nYour previous attempt was:\n{FENCE}python\n{patched}\n{FENCE}\n"
+                 "It still failed the tests. Try a genuinely different fix.")
     return {"verdict": "not_verified", "attempts": attempts, "patch": None, "diff": None}
 
 

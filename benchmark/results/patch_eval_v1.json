@@ -1,0 +1,285 @@
+{
+  "model": "z-ai/glm-4.7-flash",
+  "date": "2026-11-08",
+  "total": 20,
+  "verified": 19,
+  "verified_first_try": 17,
+  "results": [
+    {
+      "id": "bug_001",
+      "bug_type": "attribute_error",
+      "verdict": "verified",
+      "attempts_used": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "passed"
+        }
+      ],
+      "patch": "def get_user_name(user):\n    if user is None:\n        return \"\"\n    name = user.get(\"name\")\n    if name is None:\n        return \"\"\n    return name.strip()\n"
+    },
+    {
+      "id": "bug_002",
+      "bug_type": "type_error",
+      "verdict": "verified",
+      "attempts_used": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "passed"
+        }
+      ],
+      "patch": "def add_ages(a, b):\n    return int(a) + int(b)\n"
+    },
+    {
+      "id": "bug_003",
+      "bug_type": "zero_division",
+      "verdict": "verified",
+      "attempts_used": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "passed"
+        }
+      ],
+      "patch": "def average(nums):\n    if not nums:\n        return 0\n    return sum(nums) / len(nums)\n"
+    },
+    {
+      "id": "bug_004",
+      "bug_type": "index_error",
+      "verdict": "verified",
+      "attempts_used": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "passed"
+        }
+      ],
+      "patch": "def last_item(items):\n    if not items:\n        return None\n    return items[-1]\n"
+    },
+    {
+      "id": "bug_005",
+      "bug_type": "off_by_one",
+      "verdict": "verified",
+      "attempts_used": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "passed"
+        }
+      ],
+      "patch": "def sum_first_n(nums, n):\n    return sum(nums[:n])\n"
+    },
+    {
+      "id": "bug_006",
+      "bug_type": "key_error",
+      "verdict": "verified",
+      "attempts_used": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "passed"
+        }
+      ],
+      "patch": "def get_price(prices, item):\n    return prices.get(item, 0)\n"
+    },
+    {
+      "id": "bug_007",
+      "bug_type": "mutable_default",
+      "verdict": "verified",
+      "attempts_used": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "passed"
+        }
+      ],
+      "patch": "def add_tag(tag, tags=None):\n    if tags is None:\n        tags = []\n    tags.append(tag)\n    return tags\n"
+    },
+    {
+      "id": "bug_008",
+      "bug_type": "logic_error",
+      "verdict": "verified",
+      "attempts_used": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "passed"
+        }
+      ],
+      "patch": "def is_adult(age):\n    return age >= 18\n"
+    },
+    {
+      "id": "bug_009",
+      "bug_type": "loop_condition",
+      "verdict": "verified",
+      "attempts_used": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "passed"
+        }
+      ],
+      "patch": "def count_down(n):\n    out = []\n    while n > 0:\n        out.append(n)\n        n -= 1\n    return out\n"
+    },
+    {
+      "id": "bug_010",
+      "bug_type": "string_bug",
+      "verdict": "verified",
+      "attempts_used": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "failed"
+        },
+        {
+          "attempt": 2,
+          "status": "passed"
+        }
+      ],
+      "patch": "def title_words(s):\n    return s.title()\n"
+    },
+    {
+      "id": "bug_011",
+      "bug_type": "security_sql_injection",
+      "verdict": "verified",
+      "attempts_used": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "passed"
+        }
+      ],
+      "patch": "def find_user(conn, name):\n    cur = conn.execute(\"SELECT name FROM users WHERE name = ?\", (name,))\n    return [r[0] for r in cur.fetchall()]\n"
+    },
+    {
+      "id": "bug_012",
+      "bug_type": "file_error",
+      "verdict": "verified",
+      "attempts_used": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "passed"
+        }
+      ],
+      "patch": "def count_lines(path):\n    try:\n        with open(path) as f:\n            return len(f.read().splitlines())\n    except FileNotFoundError:\n        return 0\n"
+    },
+    {
+      "id": "bug_013",
+      "bug_type": "runtime_error",
+      "verdict": "verified",
+      "attempts_used": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "passed"
+        }
+      ],
+      "patch": "def remove_negatives(d):\n    keys_to_remove = [k for k in d if d[k] < 0]\n    for k in keys_to_remove:\n        del d[k]\n    return d\n"
+    },
+    {
+      "id": "bug_014",
+      "bug_type": "logic_error",
+      "verdict": "verified",
+      "attempts_used": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "passed"
+        }
+      ],
+      "patch": "def percentage(part, total):\n    return part / total * 100\n"
+    },
+    {
+      "id": "bug_015",
+      "bug_type": "recursion_error",
+      "verdict": "verified",
+      "attempts_used": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "failed"
+        },
+        {
+          "attempt": 2,
+          "status": "passed"
+        }
+      ],
+      "patch": "def factorial(n):\n    if n == 1:\n        return 1\n    if n == 0:\n        return 1\n    return n * factorial(n - 1)\n"
+    },
+    {
+      "id": "bug_016",
+      "bug_type": "logic_error",
+      "verdict": "verified",
+      "attempts_used": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "passed"
+        }
+      ],
+      "patch": "def find_max(nums):\n    best = None\n    for n in nums:\n        if best is None or n > best:\n            best = n\n    return best\n"
+    },
+    {
+      "id": "bug_017",
+      "bug_type": "side_effect",
+      "verdict": "verified",
+      "attempts_used": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "passed"
+        }
+      ],
+      "patch": "def sorted_copy(items):\n    return sorted(items)\n"
+    },
+    {
+      "id": "bug_018",
+      "bug_type": "missing_timeout",
+      "verdict": "not_verified",
+      "attempts_used": 3,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "failed"
+        },
+        {
+          "attempt": 2,
+          "status": "failed"
+        },
+        {
+          "attempt": 3,
+          "status": "failed"
+        }
+      ],
+      "patch": null
+    },
+    {
+      "id": "bug_019",
+      "bug_type": "logic_error",
+      "verdict": "verified",
+      "attempts_used": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "passed"
+        }
+      ],
+      "patch": "def is_palindrome(s):\n    # Normalize the string: remove spaces and convert to lowercase\n    normalized = s.replace(\" \", \"\").lower()\n    return normalized == normalized[::-1]\n"
+    },
+    {
+      "id": "bug_020",
+      "bug_type": "value_error",
+      "verdict": "verified",
+      "attempts_used": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "passed"
+        }
+      ],
+      "patch": "def parse_int_list(s):\n    return [int(x) for x in s.split(\",\") if x != \"\"]\n"
+    }
+  ]
+}
