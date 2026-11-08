@@ -1,0 +1,7 @@
+{
+  "id": "bug_005",
+  "bug_type": "off_by_one",
+  "description": "sum_first_n skips the n-th element",
+  "error_type": "AssertionError",
+  "known_fix": "Slice with nums[:n] instead of nums[:n-1]."
+}

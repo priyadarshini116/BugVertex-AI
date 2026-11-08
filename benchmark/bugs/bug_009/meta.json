@@ -1,0 +1,7 @@
+{
+  "id": "bug_009",
+  "bug_type": "loop_condition",
+  "description": "count_down stops one number too early",
+  "error_type": "AssertionError",
+  "known_fix": "Loop while n > 0 instead of n > 1."
+}

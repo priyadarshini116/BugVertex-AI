@@ -1,0 +1,7 @@
+{
+  "id": "bug_006",
+  "bug_type": "key_error",
+  "description": "get_price crashes when the item is not in the dict",
+  "error_type": "KeyError",
+  "known_fix": "Use dict.get with a default of 0."
+}

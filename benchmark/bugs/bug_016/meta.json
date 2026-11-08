@@ -1,0 +1,7 @@
+{
+  "id": "bug_016",
+  "bug_type": "logic_error",
+  "description": "find_max starts from 0 so all-negative lists give the wrong answer",
+  "error_type": "AssertionError",
+  "known_fix": "Start from the first element of the list."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "bug_013",
+  "bug_type": "runtime_error",
+  "description": "remove_negatives deletes from a dict while looping over it",
+  "error_type": "RuntimeError",
+  "known_fix": "Build a new dict with a comprehension instead."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "bug_010",
+  "bug_type": "string_bug",
+  "description": "title_words capitalizes only the first letter of the sentence",
+  "error_type": "AssertionError",
+  "known_fix": "Capitalize every word."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "bug_008",
+  "bug_type": "logic_error",
+  "description": "is_adult rejects exactly 18 year olds",
+  "error_type": "AssertionError",
+  "known_fix": "Use >= 18 instead of > 18."
+}

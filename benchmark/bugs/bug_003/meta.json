@@ -1,0 +1,7 @@
+{
+  "id": "bug_003",
+  "bug_type": "zero_division",
+  "description": "average crashes on an empty list",
+  "error_type": "ZeroDivisionError",
+  "known_fix": "Return 0 when the list is empty."
+}

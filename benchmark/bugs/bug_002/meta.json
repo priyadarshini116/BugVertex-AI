@@ -1,0 +1,7 @@
+{
+  "id": "bug_002",
+  "bug_type": "type_error",
+  "description": "add_ages adds strings and ints without converting",
+  "error_type": "TypeError",
+  "known_fix": "Convert both inputs to int before adding."
+}

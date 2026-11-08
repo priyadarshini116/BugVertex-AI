@@ -1,0 +1,7 @@
+{
+  "id": "bug_019",
+  "bug_type": "logic_error",
+  "description": "is_palindrome ignores case and spaces incorrectly",
+  "error_type": "AssertionError",
+  "known_fix": "Normalize to lowercase letters and digits only before comparing."
+}

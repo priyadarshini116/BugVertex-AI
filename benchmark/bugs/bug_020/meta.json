@@ -1,0 +1,7 @@
+{
+  "id": "bug_020",
+  "bug_type": "value_error",
+  "description": "parse_int_list crashes on empty items like '1,2,,3'",
+  "error_type": "ValueError",
+  "known_fix": "Skip empty items after stripping."
+}

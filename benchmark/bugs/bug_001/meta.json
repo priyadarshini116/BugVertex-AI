@@ -1,0 +1,7 @@
+{
+  "id": "bug_001",
+  "bug_type": "attribute_error",
+  "description": "get_user_name crashes when user is None or has no 'name' key",
+  "error_type": "AttributeError",
+  "known_fix": "Return empty string when user is None or name is missing, else the stripped name."
+}

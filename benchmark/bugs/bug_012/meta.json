@@ -1,0 +1,7 @@
+{
+  "id": "bug_012",
+  "bug_type": "file_error",
+  "description": "count_lines crashes when the file does not exist",
+  "error_type": "FileNotFoundError",
+  "known_fix": "Catch FileNotFoundError and return 0."
+}

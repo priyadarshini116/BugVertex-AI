@@ -1,0 +1,7 @@
+{
+  "id": "bug_014",
+  "bug_type": "logic_error",
+  "description": "percentage uses integer division and loses the fraction",
+  "error_type": "AssertionError",
+  "known_fix": "Use true division before multiplying by 100."
+}

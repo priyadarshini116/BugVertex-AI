@@ -1,0 +1,7 @@
+{
+  "id": "bug_018",
+  "bug_type": "missing_timeout",
+  "description": "fetch calls the HTTP client without a timeout",
+  "error_type": "AssertionError",
+  "known_fix": "Pass timeout=5 to client.get."
+}

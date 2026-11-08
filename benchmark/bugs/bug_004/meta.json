@@ -1,0 +1,7 @@
+{
+  "id": "bug_004",
+  "bug_type": "index_error",
+  "description": "last_item uses an out-of-range index",
+  "error_type": "IndexError",
+  "known_fix": "Use index -1 and return None for an empty list."
+}

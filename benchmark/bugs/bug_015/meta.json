@@ -1,0 +1,7 @@
+{
+  "id": "bug_015",
+  "bug_type": "recursion_error",
+  "description": "factorial has no base case for 0",
+  "error_type": "RecursionError",
+  "known_fix": "Return 1 when n <= 1."
+}

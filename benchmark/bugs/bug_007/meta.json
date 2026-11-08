@@ -1,0 +1,7 @@
+{
+  "id": "bug_007",
+  "bug_type": "mutable_default",
+  "description": "add_tag shares one list between calls",
+  "error_type": "AssertionError",
+  "known_fix": "Use None as default and create a new list inside the function."
+}

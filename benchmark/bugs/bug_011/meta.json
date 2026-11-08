@@ -1,0 +1,7 @@
+{
+  "id": "bug_011",
+  "bug_type": "security_sql_injection",
+  "description": "find_user builds SQL with an f-string, allowing SQL injection",
+  "error_type": "AssertionError",
+  "known_fix": "Use a parameterized query with a ? placeholder."
+}

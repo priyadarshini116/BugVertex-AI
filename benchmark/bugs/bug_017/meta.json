@@ -1,0 +1,7 @@
+{
+  "id": "bug_017",
+  "bug_type": "side_effect",
+  "description": "sorted_copy sorts the caller's list in place",
+  "error_type": "AssertionError",
+  "known_fix": "Return sorted(items) instead of sorting in place."
+}
