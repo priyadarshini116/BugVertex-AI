@@ -1,7 +1,7 @@
 """
 RootCause — shared retrieval + rerank + generation logic.
 
-Both the MCP server (`rootcause_server.py`) and the Streamlit dashboard
+Both the MCP server (`bugvertex_server.py`) and the Streamlit dashboard
 (`dashboard.py`) import from this module so the analysis path is defined exactly
 once. The pipeline is:
 

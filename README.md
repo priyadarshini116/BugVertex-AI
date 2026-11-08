@@ -22,7 +22,7 @@ flowchart LR
 ```
 
 All retrieval/rerank/generation logic lives in [`src/core.py`](src/core.py). The MCP server
-([`src/rootcause_server.py`](src/rootcause_server.py)) and the Streamlit dashboard
+([`src/bugvertex_server.py`](src/bugvertex_server.py)) and the Streamlit dashboard
 ([`src/dashboard.py`](src/dashboard.py)) are thin callers of that one module, so there is a
 single source of truth for the pipeline.
 
@@ -48,7 +48,7 @@ Copy-Item .env.example .env
 # then edit .env and set OPENROUTER_API_KEY=sk-or-v1-...
 
 # Run the MCP server against the bundled sample data — no data prep needed
-python src\rootcause_server.py
+python src\bugvertex_server.py
 cd RootCause
 
 python -m venv .venv
@@ -60,7 +60,7 @@ Copy-Item .env.example .env
 # then edit .env and set OPENROUTER_API_KEY=sk-or-v1-...
 
 # Run the MCP server against the bundled sample data — no data prep needed
-python src\rootcause_server.py
+python src\bugvertex_server.py
 ```
 
 macOS / Linux: `python3 -m venv .venv && source .venv/bin/activate`, then `cp .env.example .env`.
@@ -108,7 +108,7 @@ cloned the repo:
   "mcpServers": {
     "rootcause": {
       "command": "python",
-      "args": ["C:\\path\\to\\RootCause\\src\\rootcause_server.py"],
+      "args": ["C:\\path\\to\\RootCause\\src\\bugvertex_server.py"],
       "env": {
         "OPENROUTER_API_KEY": "sk-or-v1-your-key-here"
       }
@@ -184,7 +184,7 @@ RootCause/
   requirements.txt
   src/
     core.py               # shared retrieval + rerank + generation logic
-    rootcause_server.py   # MCP server — thin wrapper over core.py
+    bugvertex_server.py   # MCP server — thin wrapper over core.py
     dashboard.py          # Streamlit inspection dashboard
   scripts/
     build_index.py        # JSONL corpus -> FAISS index (+ optional LLM parsing)

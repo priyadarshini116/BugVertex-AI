@@ -7,7 +7,7 @@ file only adapts that pipeline to the MCP contract: take a query string, return 
 string (the model's answer, or a JSON error object on failure).
 
 Run:
-    python src/rootcause_server.py
+    python src/bugvertex_server.py
 
 It speaks stdio, so it's meant to be launched by an MCP client, not visited in a browser.
 See the README for the client registration snippet.
