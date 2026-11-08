@@ -1,0 +1,142 @@
+[
+  {
+    "id": "bug_001",
+    "bug_type": "attribute_error",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  },
+  {
+    "id": "bug_002",
+    "bug_type": "type_error",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  },
+  {
+    "id": "bug_003",
+    "bug_type": "zero_division",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  },
+  {
+    "id": "bug_004",
+    "bug_type": "index_error",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  },
+  {
+    "id": "bug_005",
+    "bug_type": "off_by_one",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  },
+  {
+    "id": "bug_006",
+    "bug_type": "key_error",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  },
+  {
+    "id": "bug_007",
+    "bug_type": "mutable_default",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  },
+  {
+    "id": "bug_008",
+    "bug_type": "logic_error",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  },
+  {
+    "id": "bug_009",
+    "bug_type": "loop_condition",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  },
+  {
+    "id": "bug_010",
+    "bug_type": "string_bug",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  },
+  {
+    "id": "bug_011",
+    "bug_type": "security_sql_injection",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  },
+  {
+    "id": "bug_012",
+    "bug_type": "file_error",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  },
+  {
+    "id": "bug_013",
+    "bug_type": "runtime_error",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  },
+  {
+    "id": "bug_014",
+    "bug_type": "logic_error",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  },
+  {
+    "id": "bug_015",
+    "bug_type": "recursion_error",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  },
+  {
+    "id": "bug_016",
+    "bug_type": "logic_error",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  },
+  {
+    "id": "bug_017",
+    "bug_type": "side_effect",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  },
+  {
+    "id": "bug_018",
+    "bug_type": "missing_timeout",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  },
+  {
+    "id": "bug_019",
+    "bug_type": "logic_error",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  },
+  {
+    "id": "bug_020",
+    "bug_type": "value_error",
+    "buggy_status": "failed",
+    "fixed_status": "passed",
+    "valid": true
+  }
+]
