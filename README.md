@@ -8,7 +8,7 @@ running your tests in a sandbox**. Only a patch that passes is marked **VERIFIED
 > **Attribution.** This project extends the open-source, MIT-licensed project
 > [RootCause](https://github.com/nanusaksham6/RootCause-Analysis) by Saksham Katna.
 > The original license and copyright notice are kept in [LICENSE](LICENSE).
-> Extensions in this repository are by Priyadarshini M N.
+> Extensions in this repository are by priyadarshini116.
 
 ## The problem
 
@@ -299,4 +299,4 @@ live embedding call and is skipped automatically when `OPENROUTER_API_KEY` is un
 ## License
 
 MIT, see [LICENSE](LICENSE). Original work © 2026 Saksham Katna.
-Extensions © 2026 Priyadarshini M N.
+Extensions © 2026 priyadarshini116.
