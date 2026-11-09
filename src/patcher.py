@@ -68,7 +68,8 @@ def verify_patch(buggy_code, test_code, llm=ask_llm, max_attempts=MAX_ATTEMPTS, 
     """
     baseline = run_tests(buggy_code, test_code, test_cmd=test_cmd)
     if baseline["status"] == "passed":
-        return {"verdict": "no_bug_found", "attempts": [], "patch": None, "diff": None}
+        return {"verdict": "no_bug_found", "attempts": [], "patch": None, "diff": None,
+                "baseline": baseline["output"]}
 
     output, extra, attempts = baseline["output"], "", []
     for n in range(1, max_attempts + 1):
@@ -86,12 +87,13 @@ def verify_patch(buggy_code, test_code, llm=ask_llm, max_attempts=MAX_ATTEMPTS, 
         result = run_tests(patched, test_code, test_cmd=test_cmd)
         attempts.append({"attempt": n, "status": result["status"]})
         if result["status"] == "passed":
-            return {"verdict": "verified", "attempts": attempts,
+            return {"verdict": "verified", "attempts": attempts, "baseline": baseline["output"],
                     "patch": patched, "diff": make_diff(buggy_code, patched)}
         output = result["output"]
         extra = (f"\nYour previous attempt was:\n{FENCE}python\n{patched}\n{FENCE}\n"
                  "It still failed the tests. Try a genuinely different fix.")
-    return {"verdict": "not_verified", "attempts": attempts, "patch": None, "diff": None}
+    return {"verdict": "not_verified", "attempts": attempts, "patch": None, "diff": None,
+            "baseline": baseline["output"]}
 
 
 if __name__ == "__main__":

@@ -269,6 +269,7 @@ def generate_answer(query, context, use_rag):
             {"role": "user", "content": user_prompt},
         ],
         response_format={"type": "json_object"},
+        max_tokens=1500,
         extra_body={"reasoning": GEN_REASONING},
     )
     return response.choices[0].message.content

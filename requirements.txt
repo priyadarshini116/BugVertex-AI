@@ -18,3 +18,4 @@ python-dotenv>=1.0.0   # Loads OPENROUTER_API_KEY from .env
 # --- Tests (optional) ---
 pytest>=7.0.0          # tests/test_smoke.py
 pytest
+;;kb
